@@ -16,7 +16,7 @@ bot = Bot(token=config.BOT_TOKEN)
 dp = Dispatcher()
 
 
-@dp.message(Command("exchange"))
+@dp.message(Command("get_exchange_rate"))
 async def get_exchange_rate_command(message: types.Message):
     now = datetime.now()
     date = now.strftime("%Y-%m-%d")
